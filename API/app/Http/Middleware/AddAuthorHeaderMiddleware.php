@@ -7,7 +7,7 @@ use Closure;
 class AddAuthorHeaderMiddleware
 {
     /**
-     * Handle an incoming request.
+     * Incoming request on hold
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next

@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 class Genre extends Model
 {
     /**
-     * The table our model uses from the database
+     * The content comes from database
      * 
      * @var string
      */

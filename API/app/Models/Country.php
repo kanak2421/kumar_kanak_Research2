@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Country extends Model
 {
     /**
-     * The table our model uses from the database
+     * The content comes from database
      * 
      * @var string
      */
@@ -40,7 +40,7 @@ class Country extends Model
     /* ======================== RELATIONSHIPS ==================== */
 
     /**
-     * A country has many songs
+     * A country has many places which indicates the song origin.
      * 
      * @return HasMany 
      */

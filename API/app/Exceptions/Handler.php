@@ -12,7 +12,7 @@ use Throwable;
 class Handler extends ExceptionHandler
 {
     /**
-     * A list of the exception types that should not be reported.
+     * Exceptions not to be reported here.
      *
      * @var array
      */
@@ -24,9 +24,9 @@ class Handler extends ExceptionHandler
     ];
 
     /**
-     * Report or log an exception.
+     * log debartment
      *
-     * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
+     *
      *
      * @param  \Throwable  $exception
      * @return void
@@ -39,7 +39,7 @@ class Handler extends ExceptionHandler
     }
 
     /**
-     * Render an exception into an HTTP response.
+     *  Exception to be render into an HTTP response.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Throwable  $exception

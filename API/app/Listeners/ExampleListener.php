@@ -9,7 +9,7 @@ use Illuminate\Queue\InteractsWithQueue;
 class ExampleListener
 {
     /**
-     * Create the event listener.
+     * Event listener creating.
      *
      * @return void
      */
@@ -19,7 +19,7 @@ class ExampleListener
     }
 
     /**
-     * Handle the event.
+     * Holding event.
      *
      * @param  \App\Events\ExampleEvent  $event
      * @return void

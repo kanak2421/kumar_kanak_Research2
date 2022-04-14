@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 class Song extends Model
 {
     /**
-     * The table our model uses from the database
+     * The content comes from database
      * 
      * @var string
      */
