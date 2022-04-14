@@ -14,11 +14,11 @@ class CountryController extends Controller
         if ($request->has('search')) {
             $search = $request->input('search');
 
-            // this:
+            
             $countriesQuery->where('name', 'LIKE', '%' . $search . '%');
             $countriesQuery->orWhere('code', '=',  $search);
 
-            // is the same as doing:
+            
 
             $countriesQuery
                 ->where('name', 'LIKE', '%' . $search . '%')

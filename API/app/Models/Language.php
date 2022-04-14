@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 class Language extends Model
 {
     /**
-     * The table our model uses from the database
+     * The content comes from database
      * 
      * @var string
      */
@@ -39,7 +39,7 @@ class Language extends Model
     /* ======================== RELATIONSHIPS ==================== */
 
     /**
-     * A Genre has many songs
+     * A language has many movies and tv shows
      * 
      * @return BelongsToMany
      */

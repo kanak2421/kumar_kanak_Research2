@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class SongController extends Controller
 {
     /**
-     * List all the songs stored in our Database
+     * Listing all the songs stored in our Database
      * 
      * @param Request $request
      * @return \Illuminate\Http\Response
@@ -57,7 +57,7 @@ class SongController extends Controller
     }
 
     /**
-     * Show a specific Song
+     * Particular song preview
      * 
      * @param int $id 
      * @return \Illuminate\Http\Response 
@@ -108,7 +108,7 @@ class SongController extends Controller
     }
 
     /**
-     * Updates a specific Song with the input the user provides
+     * Updating a particular Song, the user provides with the input.
      * 
      * @param int $id 
      * @param Request $request 
@@ -126,7 +126,7 @@ class SongController extends Controller
         $userInput = $request->all();
         $song = Song::find($id);
 
-        // actuallly update the given song
+
         $success = $song->update($userInput);
 
         if (! $success) {
@@ -157,7 +157,7 @@ class SongController extends Controller
     }
 
     /**
-     * Delete a specific song
+     * Ignore/delete the selected song
      * 
      * @param int $id 
      * @return \Illuminate\Http\Response

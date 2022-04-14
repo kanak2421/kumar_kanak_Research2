@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class RokushowController extends Controller
 {
     /**
-     * List all the songs stored in our Database
+     * Listing all the tv shows stored in our Database
      * 
      * @param Request $request
      * @return \Illuminate\Http\Response
@@ -20,7 +20,7 @@ class RokushowController extends Controller
 
         $roku = $rokuSqlQuery->load(['languages']);
         if ($request->has('language_id')) {
-            // modify our query to filter down to that specific language_id
+            // modifying query to filter  specific language_id
             $languageId = $request->input('language_id');
 
          
@@ -46,7 +46,7 @@ class RokushowController extends Controller
     }
 
     /**
-     * Show a specific Song
+     * Selected tv show preview
      * 
      * @param int $id 
      * @return \Illuminate\Http\Response 
@@ -128,7 +128,7 @@ class RokushowController extends Controller
 
    
     /**
-     * Store a new song in the database
+     * Store a new tv show in the database
      * 
      * @param \Illuminate\Http\Request
      * @return \Illuminate\Http\Response
@@ -162,7 +162,7 @@ class RokushowController extends Controller
     }
 
     /**
-     * Updates a specific Song with the input the user provides
+     * Updating a selected Song the user provides with the input.
      * 
      * @param int $id 
      * @param Request $request 
@@ -202,7 +202,7 @@ class RokushowController extends Controller
     }
 
     /**
-     * Delete a specific song
+     * ignore/delete the selected show
      * 
      * @param int $id 
      * @return \Illuminate\Http\Response

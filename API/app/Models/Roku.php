@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Roku extends Model
 {
     /**
-     * The table our model uses from the database
+     * The content comes from database.
      * 
      * @var string
      */

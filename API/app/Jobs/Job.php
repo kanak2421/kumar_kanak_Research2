@@ -14,9 +14,7 @@ abstract class Job implements ShouldQueue
     | Queueable Jobs
     |--------------------------------------------------------------------------
     |
-    | This job base class provides a central location to place any logic that
-    | is shared across all of your jobs. The trait included with the class
-    | provides access to the "queueOn" and "delay" queue helper methods.
+    | This job provides a location which is shared among all the jobs. The Characteristics included with the class provides access to the "queueOn" and "delay" queue helper methods.
     |
     */
 

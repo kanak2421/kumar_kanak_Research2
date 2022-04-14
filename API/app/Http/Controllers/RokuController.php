@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class RokuController extends Controller
 {
     /**
-     * List all the songs stored in our Database
+     * Listing all the Movies stored in our Database
      * 
      * @param Request $request
      * @return \Illuminate\Http\Response
@@ -46,7 +46,7 @@ class RokuController extends Controller
     }
 
     /**
-     * Show a specific Song
+     * Selectes movie preview
      * 
      * @param int $id 
      * @return \Illuminate\Http\Response 
@@ -128,7 +128,7 @@ class RokuController extends Controller
 
    
     /**
-     * Store a new song in the database
+     * Store a selected movie in the database
      * 
      * @param \Illuminate\Http\Request
      * @return \Illuminate\Http\Response
@@ -162,7 +162,7 @@ class RokuController extends Controller
     }
 
     /**
-     * Updates a specific Song with the input the user provides
+     * Updates a selected movie the user provides with the input 
      * 
      * @param int $id 
      * @param Request $request 
@@ -178,7 +178,7 @@ class RokuController extends Controller
         $userInput = $request->all();
         $roku = Roku::find($id);
 
-        // actuallly update the given song
+       
         $success = $roku->update($userInput);
 
         if (! $success) {
@@ -202,7 +202,7 @@ class RokuController extends Controller
     }
 
     /**
-     * Delete a specific song
+     * Delete/ignore a selected movie
      * 
      * @param int $id 
      * @return \Illuminate\Http\Response

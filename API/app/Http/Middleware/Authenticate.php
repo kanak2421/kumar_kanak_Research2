@@ -8,14 +8,14 @@ use Illuminate\Contracts\Auth\Factory as Auth;
 class Authenticate
 {
     /**
-     * The authentication guard factory instance.
+     * The authentication guard factory example
      *
      * @var \Illuminate\Contracts\Auth\Factory
      */
     protected $auth;
 
     /**
-     * Create a new middleware instance.
+     * Make a middleware instance
      *
      * @param  \Illuminate\Contracts\Auth\Factory  $auth
      * @return void
@@ -26,7 +26,7 @@ class Authenticate
     }
 
     /**
-     * Handle an incoming request.
+     * incoming request on hold
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next
