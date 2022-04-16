@@ -32,9 +32,9 @@ The next thing you should do after installing Lumen is set your application key 
 Since Lumen is a totally separate framework from Laravel, it does not intentionally offer compatibility with any additional Laravel libraries like Cashier, Passport, Scout, etc. If your application requires the functionality provided by these libraries, please use the Laravel framework.
 
 # Here are a few basic Api queries that can be used:-
-• $..results.length
-• $..name.first
-• $..results[*].dob
+- $..results.length
+- $..name.first
+- $..results[*].dob
 
 ## Official Documentation
 
